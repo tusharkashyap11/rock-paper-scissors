@@ -1,0 +1,48 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+body {
+    background-color:#1e06973a;
+}
+#game-title {
+    text-align: center;
+}
+#game, h2{
+    display: flex;
+    justify-content: space-around;
+}
+#selection {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 4rem;
+}
+#selection:hover {
+    transform: scale(1.4);
+    transition: 0.2s;
+}
+.transformed {
+    transform: scale(1.4);
+}
+#comp {
+    display: flex;
+    flex-direction: row;
+    font-size: 4rem;
+}
+#results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+}
+#score, #round-result {
+    font-size: 1.8rem;
+}
+#play-again {
+    font-size: 1.2rem;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}

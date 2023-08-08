@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
     <title>Rock Paper Scissors</title>
 </head>
 <body>
+    <h1 id="game-title">Rock Paper Scissors</h1>
+    <h2>First to 5 points wins</h2>
+    <button id="play-again"><a href="index.html">PLAY AGAIN</a></button>
+    <div id="game">
+        <div id="selections">
+            <h1>PICK YOUR CHOICE:</h1>
+            <button id="selection" data-selection="rock">👊</button>
+            <button id="selection" data-selection="paper">✋</button>
+            <button id="selection" data-selection="scissors">✌</button>
+        </div>
+        <div id="computer-selections">
+            <h1>COMPUTER'S CHOICE:</h1>
+            <div id="comp">
+                <div id="comp-selection" data-selection="rock">👊</div>
+                <div id="comp-selection" data-selection="paper">✋</div>
+                <div id="comp-selection" data-selection="scissors">✌</div>
+            </div>
+        </div>
+    </div>
+    <div id="results">
+        <h1>SCORE:</h1>
+        <div id="score">
+            <span id="current-score">
+            </span>
+        </div>
+        <ul id="round-result">
+        </ul>
+    </div>
 </body>
 </html>
